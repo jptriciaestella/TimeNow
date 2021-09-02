@@ -1,0 +1,20 @@
+title & button
+#1d1b67
+
+header background
+#46ccde
+
+text
+#455769
+
+green title
+#455769
+
+small title 
+#3f64c1
+
+content background
+#cdf9ff
+
+footer title
+#46ccde
