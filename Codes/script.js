@@ -10,3 +10,11 @@ function scrollFunction() {
      navbar.classList.remove("navbar-shadow");
    }
  }
+ 
+function focusField(){
+    document.getElementById("email-input").style.borderColor = "#1d1b67";
+  }
+
+function blurField(){
+    document.getElementById("email-input").style.borderColor = "#dadada";
+  }

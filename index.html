@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpg" href="./Assets/Logo.svg"/>
     <link rel="stylesheet" href="./Codes/style.css">
+    <link rel="stylesheet" href="./Codes/home.css">
     <title>TimeNow</title>
 </head>
 
@@ -14,8 +15,8 @@
         <div class="navbar-left">
             <img src="./Assets/Logo.svg" alt="">
             <p>
-                <h3>Features</h3>
-                <h3>Pricing</h3>
+                <a href="#content-2" style="text-decoration: none;"><h3>Features</h3></a>
+                <a href="./Codes/pricing.html" style="text-decoration: none;"><h3>Pricing</h3></a>
             </p>
         </div>
         <button class="start-button">
@@ -25,7 +26,7 @@
         </button>
     </div>    
 
-    <header>
+    <header id="header">
         <div class="header-content left">
             <h1>
                 Post when your audience is most active.
@@ -41,15 +42,17 @@
                         Start Scheduling
                     </h3>
                 </button>
-                <h2 style="white-space: nowrap;">
-                    View Demo
-                </h2>
+                <h3 style="white-space: nowrap;">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none; margin: 0;">
+                        View Demo
+                    </a>
+                </h3>
             </div>
             <div class="protection-text">
                 <p>
                 <img src="./Assets/Shield.svg" alt="">
                 TimeNow does not sell your data.</p>
-                <a href="#">Learn more</a>
+                <a href="#" style="font-size: 1.3em;">Learn more</a>
             </div>
         </div>
         <div class="header-image right">
@@ -57,10 +60,10 @@
         </div>
     </header>
 
-    <div class="content-1">
+    <div id="content-1">
         <div class="content-1-left left">
-            <h3>TimeNow is used by the most<br>
-                influential people.</h3>
+            <h1>TimeNow is used by the most<br>
+                influential people.</h1>
             <div class="user-images">
                 <img src="./Assets/UA1.png" alt="">
                 <img src="./Assets/UA2.png" alt="">
@@ -86,18 +89,83 @@
         </div>
     </div>
 
-    <div class="content-2">
+    <div id="content-2">
         <div class="content-2-text left">
-
+            <h5>Unified Dashboard</h5>
+            <h1>Customizable dashboard for all platforms.</h1>
+            <p>Use Twitter and Instagram but not LinkedIn? You can
+                customize your dashboard to your liking. You can even
+                schedule the same post to indicidual platforms instead of
+                all platforms.
+            </p>
+            <button class="start-button">
+                <h3>
+                    Start Scheduling
+                </h3>
+            </button>
+        </div>
+        <div class="content-2-text right">
+            <h5>Enhanced Analytics</h5>
+            <h1>Real-time data that tells you everything.</h1>
+            <p>Get detailed reports of what's working and what isn't
+                Engagement rates, impressions, views, and much more
+                data is available to you through our in-depth dashboard
+                tool.
+                <br>
+                <br>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="view-live">
+                    View Live Demo 🡲</a>
+            </p>
         </div>
     </div>
 
+    <footer id="footer">
+        <img src="./Assets/Logo.svg" alt="">
+        <div class="footer-text-1 left">
+            <div>
+                <h3>Product</h3>
+                <ul>
+                    <li>Homepage</li>
+                    <li>Pricing</li>
+                    <li>Features</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Help</h3>
+                <ul>
+                    <li>Live chat</li>
+                    <li>Send Email</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Customers</li>
+                    <li>Blog</li>
+                </ul>
+            </div>            
+        </div>
 
+        <div class="footer-text-2 right">
+            <h3><label for="email">Try TweetNow</label></h3>
+            <div id="email-input">
+                <input placeholder="Email Address" type="email" 
+                name="email" id="email" style="border: none; outline: none;" 
+                onfocus="focusField()" onblur="blurField()">
+                <button class="start-button">
+                    <h3>
+                        Start Scheduling
+                    </h3>
+                </button>
+            </div>
+        </div>
 
-
+    </footer>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./Codes/navbar.js"></script>
+<script src="./Codes/script.js"></script>
 
 </html>
