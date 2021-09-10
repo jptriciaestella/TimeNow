@@ -118,11 +118,17 @@ header{
     animation-name: float;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    transition: all 0.5s ease;
+}
+
+.view-live:hover{
+    opacity: 0.6;
+    transition: all 0.5s ease;
 }
 
 @keyframes float{
     0%   {left:0px; }
-    50%  {left:30px; }
+    50%  {left:30px;}
     100% {left:0px;}
 }
 
