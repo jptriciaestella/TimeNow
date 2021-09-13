@@ -4,6 +4,7 @@ html{
 
 body{
     margin: 0;
+    min-width: 365px;
     font-family: Helvetica Neue, Helvetica,Arial,sans-serif; 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
@@ -66,16 +67,23 @@ h1{
 }
 
 #navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10vw;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
     transition: all 0.8s ease;
+}
+
+.navbar-desktop{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10vw;
+    align-items: center;
+}
+
+.navbar-mobile{
+    display: none;
 }
 
 .navbar-left{
@@ -99,6 +107,7 @@ h1{
 .start-button{
     border-color: rgba(255, 255, 255, 0);
     background-color: #1d1b67;
+    font-size: 14px;
     color: white;
     border-radius: 5px;
     padding: 5px 25px;
@@ -116,13 +125,14 @@ h1{
 }
 
 footer{
-    padding: 3vw 0;
+    padding: 5vh 10vw;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 footer img{
     position: absolute;
-    margin: 10px 0 10px 10vw;
 }
 
 .footer-text-1{
@@ -135,7 +145,6 @@ footer img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5vw;
 }
 
 ul{
@@ -150,7 +159,7 @@ li, .footer-text-1 h3{
 }
 
 #email-input{
-    width: max-content;
+    display: flex;
     border: solid 2px #dadada;
     margin: 0;
     padding: 2px;
@@ -162,20 +171,58 @@ li, .footer-text-1 h3{
 }
 
 #email-input input{
-    margin-left: 20px;
+    margin: 0 20px;
+    width: 15vw;
+    min-width: 150px;
     font-size: 1.3em;
 }
 
-@media (max-width: 1299px)  { 
-
+@media (max-width: 1357px)  { 
+    h1{
+        font-size: 2.3em;
+    }
 }
 
 @media (max-width: 961px)  { 
-
+    h1{
+        font-size: 2.3em;
+    }
 }
 
-@media (max-width: 600px)  { 
+@media (max-width: 700px){
+    .footer-text-1{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80vw;
+    }
+    
+    li, .footer-text-1 h3{
+        margin: 10px 20px 0 0;
+    }
+    
 
+    #email-input input{
+        margin: 0 10px;
+        font-size: 1em;
+        min-width: 100px;
+    }
+}
+
+/* PHONE */
+@media (max-width: 641px)  { 
+    .start-button{
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+    .navbar-desktop{
+        display: none;
+    }
+    .navbar-mobile{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 10vw;
+        align-items: center;
+    }
 }
 
 @media (max-width: 365px){

@@ -12,17 +12,27 @@
 
 <body>
     <div id="navbar">
-        <div class="navbar-left">
-            <img src="./Assets/Logo.svg" alt="" onclick="location.href='../index.html'">
-            <a href="#content-2" style="text-decoration: none;"><h3>Features</h3></a>
-            <a href="./Codes/pricing.html" style="text-decoration: none;"><h3>Pricing</h3></a>
+        <div class="navbar-desktop">
+            <div class="navbar-left">
+                <img src="./Assets/Logo.svg" alt="" onclick="location.href='../index.html'">
+                <a href="#content-2" style="text-decoration: none;"><h3>Features</h3></a>
+                <a href="./Codes/pricing.html" style="text-decoration: none;"><h3>Pricing</h3></a>
+            </div>
+            <div class="navbar-right">
+                <button class="start-button">
+                    <h3>
+                        Start Scheduling
+                    </h3>
+                </button>
+            </div>
         </div>
-        <div class="navbar-right">
-            <button class="start-button">
-                <h3>
-                    Start Scheduling
-                </h3>
-            </button>
+        <div class="navbar-mobile">
+            <div class="navbar-left">
+                <img src="./Assets/Logo.svg" alt="" onclick="location.href='../index.html'">
+            </div>
+            <div class="navbar-right">
+                <img src="./Assets/Hamburger Menu.svg" alt="">
+            </div>
         </div>
     </div>    
 
@@ -32,8 +42,8 @@
                 Post when your audience is most active.
             </h1>
             <p>
-                With Time Now, automatically schedule your posts on<br>
-                Twitter, LinkedIn, and Instagram to post when your<br>
+                With Time Now, automatically schedule your posts on
+                Twitter, LinkedIn, and Instagram to post when your
                 followers are most active.
             </p>
             <div class="header-buttons">
@@ -61,7 +71,7 @@
     </header>
 
     <div id="content-1">
-        <div class="content-1-left left">
+        <div class="content-1-text left">
             <h1>TimeNow is used by the most<br>
                 influential people.</h1>
             <div class="user-images">
@@ -79,7 +89,7 @@
                 <div class="fill-empty-image"></div>
             </div>
         </div>
-        <div class="right">
+        <div class="content-1-text right">
             <p>The most influential people on Facebook, Twitter, and
                 Instagram are using TweetNow to schedule posts when
                 their followers are most active. 
@@ -121,7 +131,7 @@
 
     <footer id="footer">
         <img src="./Assets/Logo.svg" alt="">
-        <div class="footer-text-1 left">
+        <div class="footer-text-1">
             <div>
                 <h3>Product</h3>
                 <ul>
@@ -145,10 +155,10 @@
                     <li>Customers</li>
                     <li>Blog</li>
                 </ul>
-            </div>            
+            </div>       
         </div>
 
-        <div class="footer-text-2 right">
+        <div class="footer-text-2">
             <h3><label for="email">Try TweetNow</label></h3>
             <div id="email-input">
                 <input placeholder="Email Address" type="email" 
