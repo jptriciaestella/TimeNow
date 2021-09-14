@@ -3,12 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 0 10vw;
+    padding-top: max(15vh,120px) !important;
     text-align: center;
 }
 
 .pricing-content h1{
     margin: 0;
     font-size: 3.8em;
+}
+
+/* PHONE */
+@media (max-width: 641px)  { 
+    .pricing-content h1{
+        font-size: 3.2em;
+    }
 }

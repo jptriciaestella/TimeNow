@@ -10,9 +10,9 @@
     <title>TimeNow</title>
 </head>
 
-<body>
+<body id="body">
     <div id="navbar">
-        <div class="navbar-desktop">
+        <div id="navbar-desktop">
             <div class="navbar-left">
                 <img src="./Assets/Logo.svg" alt="" onclick="location.href='../index.html'">
                 <a href="#content-2" style="text-decoration: none;"><h3>Features</h3></a>
@@ -26,153 +26,173 @@
                 </button>
             </div>
         </div>
-        <div class="navbar-mobile">
+        <div id="navbar-mobile">
             <div class="navbar-left">
                 <img src="./Assets/Logo.svg" alt="" onclick="location.href='../index.html'">
             </div>
+        </div>
+        <div id="burgerBtn"></div>
+    </div>
+
+    <ul id="nav">
+        <li>
+            <a href="#content-2" onclick="toggleNavbarAcvtive()" style="text-decoration: none; color: #1d1b67;"><h3>Features</h3></a>
+            <hr>
+        </li>
+        <li>
+            <a href="./Codes/pricing.html" style="text-decoration: none; color:#1d1b67;"><h3>Pricing</h3></a>
+            <hr style="margin-bottom: 25px;">
+        </li>
+        <li>
             <div class="navbar-right">
-                <img src="./Assets/Hamburger Menu.svg" alt="">
-            </div>
-        </div>
-    </div>    
-
-    <header id="header">
-        <div class="header-content left">
-            <h1>
-                Post when your audience is most active.
-            </h1>
-            <p>
-                With Time Now, automatically schedule your posts on
-                Twitter, LinkedIn, and Instagram to post when your
-                followers are most active.
-            </p>
-            <div class="header-buttons">
                 <button class="start-button">
                     <h3>
                         Start Scheduling
                     </h3>
                 </button>
-                <h3 style="white-space: nowrap;">
-                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" style="text-decoration: none; margin: 0;">
-                        View Demo
-                    </a>
-                </h3>
             </div>
-            <div class="protection-text">
+        </li>
+    </ul>
+
+    <div id="all-content">
+        <header id="header">
+            <div class="header-content left">
+                <h1>
+                    Post when your audience is most active.
+                </h1>
                 <p>
-                <img src="./Assets/Shield.svg" alt="">
-                TimeNow does not sell your data.</p>
-                <a href="#" style="font-size: 1.3em;">Learn more</a>
+                    With Time Now, automatically schedule your posts on
+                    Twitter, LinkedIn, and Instagram to post when your
+                    followers are most active.
+                </p>
+                <div class="header-buttons">
+                    <button class="start-button">
+                        <h3>
+                            Start Scheduling
+                        </h3>
+                    </button>
+                    <h3 style="white-space: nowrap;">
+                        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" style="text-decoration: none; margin: 0;">
+                            View Demo
+                        </a>
+                    </h3>
+                </div>
+                <div class="protection-text">
+                    <p>
+                    <img src="./Assets/Shield.svg" alt="">
+                    TimeNow does not sell your data.</p>
+                    <a href="#" style="font-size: 1.3em;">Learn more</a>
+                </div>
+            </div>
+            <div class="header-image right">
+                <img src="./Assets/Mockup.png" alt="">
+            </div>
+        </header>
+    
+        <div id="content-1">
+            <div class="content-1-text left">
+                <h1>TimeNow is used by the most
+                    influential people.</h1>
+                <div class="user-images">
+                    <img src="./Assets/UA1.png" alt="">
+                    <img src="./Assets/UA2.png" alt="">
+                    <img src="./Assets/UA3.png" alt="">
+                    <img src="./Assets/UA4.png" alt="">
+                    <img src="./Assets/UA5.png" alt="">
+                    <img src="./Assets/UA6.png" alt="">
+                    <img src="./Assets/UA7.png" alt="">
+                    <img src="./Assets/UA8.png" alt="">
+                    <div class="fill-empty-image"></div>
+                    <div class="fill-empty-image"></div>
+                    <div class="fill-empty-image"></div>
+                    <div class="fill-empty-image"></div>
+                </div>
+            </div>
+            <div class="content-1-text right">
+                <p>The most influential people on Facebook, Twitter, and
+                    Instagram are using TweetNow to schedule posts when
+                    their followers are most active. 
+                    <br><br>
+                    They generally receive 23% more engagement than 
+                    people who do not.</p>
             </div>
         </div>
-        <div class="header-image right">
-            <img src="./Assets/Mockup.png" alt="">
-        </div>
-    </header>
-
-    <div id="content-1">
-        <div class="content-1-text left">
-            <h1>TimeNow is used by the most
-                influential people.</h1>
-            <div class="user-images">
-                <img src="./Assets/UA1.png" alt="">
-                <img src="./Assets/UA2.png" alt="">
-                <img src="./Assets/UA3.png" alt="">
-                <img src="./Assets/UA4.png" alt="">
-                <img src="./Assets/UA5.png" alt="">
-                <img src="./Assets/UA6.png" alt="">
-                <img src="./Assets/UA7.png" alt="">
-                <img src="./Assets/UA8.png" alt="">
-                <div class="fill-empty-image"></div>
-                <div class="fill-empty-image"></div>
-                <div class="fill-empty-image"></div>
-                <div class="fill-empty-image"></div>
-            </div>
-        </div>
-        <div class="content-1-text right">
-            <p>The most influential people on Facebook, Twitter, and
-                Instagram are using TweetNow to schedule posts when
-                their followers are most active. 
-                <br><br>
-                They generally receive 23% more engagement than 
-                people who do not.</p>
-        </div>
-    </div>
-
-    <div id="content-2">
-        <div class="content-2-text left">
-            <h5>Unified Dashboard</h5>
-            <h1>Customizable dashboard for all platforms.</h1>
-            <p>Use Twitter and Instagram but not LinkedIn? You can
-                customize your dashboard to your liking. You can even
-                schedule the same post to individual platforms instead of
-                all platforms.
-            </p>
-            <button class="start-button">
-                <h3>
-                    Start Scheduling
-                </h3>
-            </button>
-        </div>
-        <div class="content-2-text right">
-            <h5>Enhanced Analytics</h5>
-            <h1>Real-time data that tells you everything.</h1>
-            <p>Get detailed reports of what's working and what isn't
-                Engagement rates, impressions, views, and much more
-                data is available to you through our in-depth dashboard
-                tool.
-                <br>
-                <br>
-                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="view-live">
-                    View Live Demo 🡲</a>
-            </p>
-        </div>
-    </div>
-
-    <footer id="footer">
-        <img src="./Assets/Logo.svg" alt="">
-        <div class="footer-text-1">
-            <div>
-                <h3>Product</h3>
-                <ul>
-                    <li>Homepage</li>
-                    <li>Pricing</li>
-                    <li>Features</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Help</h3>
-                <ul>
-                    <li>Live chat</li>
-                    <li>Send Email</li>
-                    <li>FAQ</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Company</h3>
-                <ul>
-                    <li>About</li>
-                    <li>Customers</li>
-                    <li>Blog</li>
-                </ul>
-            </div>       
-        </div>
-
-        <div class="footer-text-2">
-            <h3><label for="email">Try TweetNow</label></h3>
-            <div id="email-input">
-                <input placeholder="Email Address" type="email" 
-                name="email" id="email" style="border: none; outline: none;" 
-                onfocus="focusField()" onblur="blurField()">
+    
+        <div id="content-2">
+            <div class="content-2-text left">
+                <h5>Unified Dashboard</h5>
+                <h1>Customizable dashboard for all platforms.</h1>
+                <p>Use Twitter and Instagram but not LinkedIn? You can
+                    customize your dashboard to your liking. You can even
+                    schedule the same post to individual platforms instead of
+                    all platforms.
+                </p>
                 <button class="start-button">
                     <h3>
                         Start Scheduling
                     </h3>
                 </button>
             </div>
+            <div class="content-2-text right">
+                <h5>Enhanced Analytics</h5>
+                <h1>Real-time data that tells you everything.</h1>
+                <p>Get detailed reports of what's working and what isn't
+                    Engagement rates, impressions, views, and much more
+                    data is available to you through our in-depth dashboard
+                    tool.
+                    <br>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="view-live">
+                        View Live Demo &#8594</a>
+                </p>
+            </div>
         </div>
+    
+        <footer id="footer">
+            <img src="./Assets/Logo.svg" alt="">
+            <div class="footer-text-1">
+                <div>
+                    <h3>Product</h3>
+                    <ul>
+                        <li>Homepage</li>
+                        <li>Pricing</li>
+                        <li>Features</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Help</h3>
+                    <ul>
+                        <li>Live chat</li>
+                        <li>Send Email</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Customers</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>       
+            </div>
+    
+            <div class="footer-text-2">
+                <h3><label for="email">Try TweetNow</label></h3>
+                <div id="email-input">
+                    <input placeholder="Email Address" type="email" 
+                    name="email" id="email" style="border: none; outline: none;" 
+                    onfocus="focusField()" onblur="blurField()">
+                    <button class="start-button">
+                        <h3>
+                            Start Scheduling
+                        </h3>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-    </footer>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

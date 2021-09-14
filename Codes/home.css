@@ -126,6 +126,8 @@ header{
     transition: all 0.5s ease;
 }
 
+
+
 @keyframes float{
     0%   {left:0px; }
     50%  {left:30px;}
@@ -201,6 +203,9 @@ header{
         flex-direction: column;
         height: min-content;
     }
+    .header-content h1{
+        font-size: 3.8em;
+    }
     .header-content
     {
         padding: 15vh 10vw 10vh 10vw;
@@ -212,12 +217,13 @@ header{
         padding: 0;
         width: 100%;
         height: 100vw;
+        min-height: 450px;
     }
     .header-image img{
         margin: 0;
         padding: 0;
         width: 80vw;
-        min-width: 150px;
+        min-width: 350px;
     }
     .header-buttons{
         flex-direction: row;
@@ -238,7 +244,9 @@ header{
 
 /* PHONE */
 @media (max-width: 641px)  { 
-    
+    .header-content h1{
+        font-size: 3.2em;
+    }
 }
 
 @media (max-width: 430px)  { 
@@ -251,5 +259,9 @@ header{
     .header-buttons{
         flex-direction: column;
         align-items: center;
+        width: auto;
+    }
+    .header-image img{
+        width: 90vw;
     }
 }
