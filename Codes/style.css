@@ -305,11 +305,11 @@ footer img{
     justify-content: center;
 }
 
-ul{
+footer ul{
     padding: 0;
 }
 
-li, .footer-text-1 h3{
+footer li, .footer-text-1 h3{
     white-space: nowrap;
     font-size: 1em;
     list-style: none;
